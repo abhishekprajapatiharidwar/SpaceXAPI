@@ -13,7 +13,7 @@ app.listen(port, () => {
     console.log(process.env.TOKEN);
 });
 
-app.get('/', async (req, res) => {
+app.post('/', async (req, res) => {
     try {
         const Recievetoken = req.body.token;
 
